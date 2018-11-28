@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/parent_linear_layout"
+       android:orientation="vertical">
+
+       <Button
+           android:id="@+id/button"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentTop="true"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="27dp"
+           android:onClick="barcodeReco"
+           android:backgroundTint="#FF0266"
+           android:text="QR code Scanner" />
+
+
+
+       <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:orientation="horizontal"
+           android:paddingTop="20dp">
+           <TextView
+               android:id="@+id/nameTitle"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="5"
+               android:textColor="#000000"
+               android:text="Product"/>
+           <TextView
+               android:id="@+id/qtyTitle"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="5"
+               android:textColor="#000000"
+               android:text="Quantity"/>
+           <TextView
+               android:id="@+id/priceTitle"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="5"
+               android:textColor="#000000"
+               android:text="Price"/>
+           <TextView
+               android:id="@+id/priceTitle1"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:textColor="#000000"
+               android:text=""/>
+
+
+       </LinearLayout>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:orientation="horizontal" >
+           <TextView
+               android:id="@+id/name"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="5"
+               android:text="Total amount:"/>
+           <TextView
+               android:id="@+id/qty"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="5"
+               android:text=""/>
+           <TextView
+               android:id="@+id/totalPrice"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="5"
+               android:text="0"/>
+           <TextView
+               android:id="@+id/totalPrice1"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:text=""/>
+
+
+
+       </LinearLayout>
+
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Send Bill"
+           android:id="@+id/billSend"
+           android:backgroundTint="#FF0266"
+           android:onClick="sendEmail" />
+
+   </LinearLayout>
+
+
+
+
+
+
+</ScrollView>
